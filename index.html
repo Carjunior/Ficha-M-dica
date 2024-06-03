@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Médico</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+  <form action="confirmacao.html">
+    <div class="w-25">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Dados Pessoais
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="dados-pessoais mb-3">
+                <label for="personalinfo" class="form-label"> <b> Nome Completo </b> </label>
+                <input type="text" class="form-control mb-3" id="Inputname" aria-describedby="nameHelp">
+
+                <label for="sexinfo" class="form-label"> <b> Sexo </b> </label>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>Selecione</option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Feminino</option>
+                  <option value="3">Prefiro não identificar</option>
+                </select>
+
+                <label for="datalinfo" class="form-label"> <b> Data de Nascimento </b> </label>
+                <input type="date" class="form-control mb-3" id="Inputdata" aria-describedby="dataHelp">
+
+                <label for="numberinfo" class="form-label"> <b> Numero para contato </b> </label>
+                <input type="text" class="form-control mb-3" id="Inputphonenumber" placeholder="(**) 91234-5678">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-secondary-subtle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Dados Médicos
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="dados-medicos">
+                <label for="medicallinfo" class="form-label"> <b> Faz tratamento ou é portador de alguma doença? Se sim,
+                    qual? </b> </label>
+                <input type="text" class="form-control mb-3" id="Inputmedicalinformation" aria-describedby="medicalHelp"
+                  placeholder="Escreva aqui a doença">
+
+                <label for="medicallinfo" class="form-label"> <b> Possui alergia a alguma medicação? </b> </label>
+                <input class="form-check-input" name="alergia" type="radio" id="alergiasim" value="optionA">
+                <label class="form-check-label me-1" for="alergiasim"> Sim </label>
+
+                <input class="form-check-input" name="alergia" type="radio" id="alergianao" value="optionB">
+                <label class="form-check-label me-1" for="alergianao"> Não </label>
+                <input type="text" class="form-control mb-3" id="alergiasnao" aria-describedby="medicalHelp"
+                  placeholder="Escreva aqui a medicação">
+
+                <label for="medicalinfo" class="form-label"> <b> Usa alguma medicação? </b> </label>
+                <input class="form-check-input" name="medicacao" type="radio" id="exampleRadios1" value="optionC">
+                <label class="form-check-label me-1" for="exampleRadios1"> Sim </label>
+
+                <input class="form-check-input" name="medicacao" type="radio" id="medicacaosim" value="optionD">
+                <label class="form-check-label me-1" for="exampleRadios1"> Não </label>
+                <input type="text" class="form-control mb-3" id="medicacaonao" aria-describedby="medicalHelp"
+                  placeholder="Escreva aqui a medicação">
+
+                <p><b>Selecione o seu tipo sanguínio</b></p>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option1" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> A+ </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios2"
+                  value="option2">
+                <label class="form-check-label me-1" for="exampleRadios2"> B+ </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option3" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> AB+ </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option4" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> A- </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option5" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> B- </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option6" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> AB- </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option7" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> O- </label>
+                <div class="vr"></div>
+
+                <input class="form-check-input" type="radio" name="informaçaosanguinia" id="exampleRadios1"
+                  value="option8" checked>
+                <label class="form-check-label me-1" for="exampleRadios1"> O+ </label>
+              </div>
+            </div>
+
+            <p><b>Nos últimos 14 dias, você passou ou está passando por algum dos seguintes sintomas?</b></p>
+
+            <div class="paicheckbox">
+              <div class="blococheckbox me-3 me-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Tosse
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Dores na Garganta
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Dores de Cabeça
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Dores no Corpo
+                  </label>
+                </div>
+              </div>
+              <div class="blococheckbox me-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Diarreia
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Vômito
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Febre
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Perda de Olfato
+                  </label>
+                </div>
+              </div>
+
+              <div class="blococheckbox me-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Fadiga
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Sente Calafrios
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Outros
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-secondary-subtle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+              Dados Técnicos
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <label for="tecnicalinfo" class="form-label"> <b> Pressão Sanguínia </b> </label>
+              <input type="text" class="form-control mb-3" id="Inputtecnicalinformation" aria-describedby="tecnicalHelp" placeholder="≤120">
+
+              <label for="oxigenacaoinfo" class="form-label"> <b> Oxigenação Sanguínia </b> </label>
+              <input type="text" class="form-control mb-3" id="Inputtecnicalinformationoxigen" aria-describedby="tecnicalHelp" placeholder="95%">
+
+              <label for="termicalinfo" class="form-label"> <b> Temperatura Corporal </b> </label>
+              <input type="text" class="form-control mb-3" id="Inputtecnicalinformatiotermical" aria-describedby="tecnicalHelp" placeholder="37ºC">
+
+
+
+              <div class="container mt-3">
+                <h2>Grupo de Risco do Paciente</h2>
+                <div class="form-group">
+                  <div class="form-check p-3 mb-2 bg-danger text-white">
+                    <input class="form-check-input" type="radio" name="grupoderisco" id="emergencia" value="emergencia">
+                    <label class="form-check-label" for="emergencia"> Emergência </label>
+                  </div>
+
+                  <div class="form-check p-3 mb-2 bg-warning text-white">
+                    <input class="form-check-input" type="radio" name="grupoderisco" id="muita-urgencia"
+                      value="muita-urgencia">
+                    <label class="form-check-label" for="muita-urgencia"> Muita Urgência </label>
+                  </div>
+
+                  <div class="form-check p-3 mb-2 fundolaranja text-white">
+                    <input class="form-check-input" type="radio" name="grupoderisco" id="urgencia" value="urgencia">
+                    <label class="form-check-label" for="urgencia"> Urgência </label>
+                  </div>
+
+                  <div class="form-check p-3 mb-2 bg-success text-white">
+                    <input class="form-check-input" type="radio" name="grupoderisco" id="pouca-urgencia"
+                      value="pouca-urgencia">
+                    <label class="form-check-label" for="pouca-urgencia"> Pouca Urgência </label>
+                  </div>
+
+                  <div class="form-check p-3 mb-2 bg-primary text-white">
+                    <input class="form-check-input" type="radio" name="grupoderisco" id="nao-urgencia"
+                      value="nao-urgencia">
+                    <label class="form-check-label" for="nao-urgencia"> Não Urgência </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <input type="submit" value="Enviar Formulário" class="mt-3 btn btn-primary">
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

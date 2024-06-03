@@ -1,0 +1,20 @@
+.mensagemrecebida{
+    color: yellowgreen;
+    font-size: xx-large;
+    justify-content: center;
+    display: flex;
+    padding-top: 10rem;
+}
+
+.fundolaranja {
+    background-color: orange;
+    
+}
+
+.paicheckbox{
+display: flex;
+}
+
+.blococheckbox{
+flex-direction: column;
+}
